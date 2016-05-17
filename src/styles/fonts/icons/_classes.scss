@@ -1,0 +1,56 @@
+@font-face {
+  $fonts-base-path: conf('paths.fonts');
+
+  font-family: 'icons';
+  src: url('#{$fonts-base-path}/icons/icons.eot');
+  src: url('#{$fonts-base-path}/icons/icons.eot?#iefix') format('eot'),
+       url('#{$fonts-base-path}/icons/icons.woff') format('woff'),
+       url('#{$fonts-base-path}/icons/icons.ttf') format('truetype'),
+       url('#{$fonts-base-path}/icons/icons.svg#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  display: inline-block;
+  font-family: 'icons';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.icon-cert1:before {
+  content: conf('icons.cert1');
+}
+
+.icon-cert2:before {
+  content: conf('icons.cert2');
+}
+
+.icon-lab:before {
+  content: conf('icons.lab');
+}
+
+.icon-logo:before {
+  content: conf('icons.logo');
+}
+
+.icon-minus:before {
+  content: conf('icons.minus');
+}
+
+.icon-partnerships:before {
+  content: conf('icons.partnerships');
+}
+
+.icon-plus:before {
+  content: conf('icons.plus');
+}
+
+.icon-team:before {
+  content: conf('icons.team');
+}
+

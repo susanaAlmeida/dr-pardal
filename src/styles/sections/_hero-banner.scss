@@ -1,0 +1,200 @@
+.hero-banner {
+  align-items: center;
+  height: calc(100vh - #{conf('height.header')});
+
+  .left-container {
+    @include centering-container;
+
+    height: 100%;
+    position: relative;
+  }
+
+  .trigger {
+    @include size(10px 0);
+
+    display: none;
+  }
+
+  .brand-bottom {
+    @include size(220px 32px);
+    @include position(absolute, 0 null null 50%);
+
+    background-image: url('images/logo_2.jpg');
+    transform: translateX(-50%);
+  }
+
+  .text-container {
+    flex: 0 0 0;
+    height: 212px;
+    overflow: visible;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+
+    div {
+      @include position(absolute, null null null -105px);
+    }
+
+    span {
+      @include conf('font.montserrat.light');
+      @include font-size(22, 28);
+
+      display: block;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    h1 + span {
+      display: none;
+    }
+  }
+
+  .right-container {
+    background-color: conf('color.gray');
+    height: 100%;
+    position: relative;
+    z-index: -1;
+
+    &::before {
+      @include position(absolute, null 0 0 0);
+
+      background-image: url('images/hero-banner.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      height: 80%;
+      z-index: 0;
+    }
+  }
+}
+
+@include media('<=1600px') {
+  .hero-banner {
+    .right-container::before {
+      height: 60%;
+    }
+  }
+}
+
+@include media('<=1400px') {
+  .hero-banner {
+    span {
+      font-size: 24px;
+    }
+
+    h1 {
+      @include font-size(70, 79);
+    }
+  }
+}
+
+@include media('<=860px') {
+  .hero-banner {
+    align-items: flex-start;
+    height: calc(100vh - #{conf('height.header-mobile')});
+
+    .brand-bottom {
+      display: none;
+    }
+
+    .text-container {
+      @include position(fixed, 140px null null 30px);
+
+      flex-basis: 100%;
+
+      h1 + span {
+        display: block;
+        margin: 18px 0 0;
+      }
+
+      div {
+        left: 0;
+      }
+    }
+
+    .left-container {
+      align-items: flex-start;
+      padding: 85px 0 0 30px;
+    }
+
+    .right-container::before {
+      height: 50%;
+    }
+  }
+}
+
+@include media('<=tablet', 'landscape') {
+  .hero-banner {
+    .left-container {
+      padding-top: 10%;
+    }
+
+    .right-container::before {
+      height: 70%;
+    }
+  }
+}
+
+@include media('<=736px') {
+  .hero-banner {
+    h1 {
+      @include font-size(35, 40);
+    }
+
+    .trigger {
+      @include position(absolute, 20% null null  null);
+    }
+
+    .text-container {
+      span {
+        @include font-size(14, 20);
+
+        margin-bottom: 10px;
+      }
+
+      h1 + span {
+        margin: 8px 0 0;
+      }
+    }
+  }
+}
+
+@include media('<=860px', 'portrait') {
+  .hero-banner .trigger {
+    @include position(absolute, 30% null null  null);
+
+    display: block;
+    height: 1px;
+  }
+}
+
+@include media('<=460px') {
+  .hero-banner {
+    .right-container::before {
+      background-position: -95px center;
+      height: 60%;
+    }
+  }
+}
+
+@include media('<=414px', 'portrait') {
+  .hero-banner .trigger {
+    @include position(absolute, 25% null null  null);
+  }
+}
+
+@include media('<=375px', 'portrait') {
+  .hero-banner .trigger {
+    @include position(absolute, 20% null null  null);
+  }
+}
+
+
+@include media('<=320px') {
+  .hero-banner {
+    .trigger {
+      display: none;
+      height: 0;
+    }
+  }
+}

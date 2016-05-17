@@ -1,0 +1,1811 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icons';
+  src: url("./fonts/icons/icons.eot");
+  src: url("./fonts/icons/icons.eot?#iefix") format("eot"), url("./fonts/icons/icons.woff") format("woff"), url("./fonts/icons/icons.ttf") format("truetype"), url("./fonts/icons/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 14, /Users/gen/sites/dr-pardal/src/styles/fonts/icons/_classes.scss */
+[class^='icon-'],
+[class*=' icon-'] {
+  display: inline-block;
+  font-family: 'icons';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1; }
+
+/* line 25, /Users/gen/sites/dr-pardal/src/styles/fonts/icons/_classes.scss */
+.icon-cert1:before {
+  content: ""; }
+
+/* line 29, /Users/gen/sites/dr-pardal/src/styles/fonts/icons/_classes.scss */
+.icon-cert2:before {
+  content: ""; }
+
+/* line 33, /Users/gen/sites/dr-pardal/src/styles/fonts/icons/_classes.scss */
+.icon-lab:before {
+  content: ""; }
+
+/* line 37, /Users/gen/sites/dr-pardal/src/styles/fonts/icons/_classes.scss */
+.icon-logo:before {
+  content: ""; }
+
+/* line 41, /Users/gen/sites/dr-pardal/src/styles/fonts/icons/_classes.scss */
+.icon-minus:before {
+  content: ""; }
+
+/* line 45, /Users/gen/sites/dr-pardal/src/styles/fonts/icons/_classes.scss */
+.icon-partnerships:before {
+  content: ""; }
+
+/* line 49, /Users/gen/sites/dr-pardal/src/styles/fonts/icons/_classes.scss */
+.icon-plus:before {
+  content: ""; }
+
+/* line 53, /Users/gen/sites/dr-pardal/src/styles/fonts/icons/_classes.scss */
+.icon-team:before {
+  content: ""; }
+
+@font-face {
+  font-family: 'montserrat-hairline';
+  src: url("./fonts/montserrat/montserrat-hairline-webfont.eot");
+  src: url("./fonts/montserrat/montserrat-hairline-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat/montserrat-hairline-webfont.woff2") format("woff2"), url("./fonts/montserrat/montserrat-hairline-webfont.woff") format("woff"), url("./fonts/montserrat/montserrat-hairline-webfont.ttf") format("truetype"), url("./fonts/montserrat/montserrat-hairline-webfont.svg#montserrathairline") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat-light';
+  src: url("./fonts/montserrat/montserrat-light-webfont.eot");
+  src: url("./fonts/montserrat/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat/montserrat-light-webfont.woff2") format("woff2"), url("./fonts/montserrat/montserrat-light-webfont.woff") format("woff"), url("./fonts/montserrat/montserrat-light-webfont.ttf") format("truetype"), url("./fonts/montserrat/montserrat-light-webfont.svg#montserratlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat-semi_bold';
+  src: url("./fonts/montserrat/montserrat-semibold-webfont.eot");
+  src: url("./fonts/montserrat/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat/montserrat-semibold-webfont.woff2") format("woff2"), url("./fonts/montserrat/montserrat-semibold-webfont.woff") format("woff"), url("./fonts/montserrat/montserrat-semibold-webfont.ttf") format("truetype"), url("./fonts/montserrat/montserrat-semibold-webfont.svg#montserratsemi_bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat-ultra_light';
+  src: url("./fonts/montserrat/montserrat-ultralight-webfont.eot");
+  src: url("./fonts/montserrat/montserrat-ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat/montserrat-ultralight-webfont.woff2") format("woff2"), url("./fonts/montserrat/montserrat-ultralight-webfont.woff") format("woff"), url("./fonts/montserrat/montserrat-ultralight-webfont.ttf") format("truetype"), url("./fonts/montserrat/montserrat-ultralight-webfont.svg#montserratultra_light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 1, /Users/gen/sites/dr-pardal/src/styles/base/_misc.scss */
+body {
+  color: #232020;
+  line-height: 0;
+  margin: 0;
+  padding: 120px 0 0;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 10, /Users/gen/sites/dr-pardal/src/styles/base/_misc.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 14, /Users/gen/sites/dr-pardal/src/styles/base/_misc.scss */
+.left-container {
+  -webkit-flex: 0 0 33.33%;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%; }
+
+/* line 18, /Users/gen/sites/dr-pardal/src/styles/base/_misc.scss */
+.right-container {
+  -webkit-flex: 0 0 66.67%;
+      -ms-flex: 0 0 66.67%;
+          flex: 0 0 66.67%; }
+
+/* line 22, /Users/gen/sites/dr-pardal/src/styles/base/_misc.scss */
+section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+@media (max-width: 860px) {
+  /* line 27, /Users/gen/sites/dr-pardal/src/styles/base/_misc.scss */
+  body {
+    padding: 40px 0 0; } }
+
+/* line 3, /Users/gen/sites/dr-pardal/src/styles/base/_typography.scss */
+h1, h2, h3 {
+  font-family: "montserrat-semi_bold";
+  margin: 0; }
+
+/* line 11, /Users/gen/sites/dr-pardal/src/styles/base/_typography.scss */
+h1 {
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+/* line 11, /Users/gen/sites/dr-pardal/src/styles/base/_typography.scss */
+h2 {
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase; }
+
+/* line 11, /Users/gen/sites/dr-pardal/src/styles/base/_typography.scss */
+h3 {
+  font-size: 36px;
+  letter-spacing: 0.51px;
+  line-height: 36px; }
+
+/* line 17, /Users/gen/sites/dr-pardal/src/styles/base/_typography.scss */
+p {
+  font-family: "montserrat-light";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  margin: 0; }
+
+/* line 22, /Users/gen/sites/dr-pardal/src/styles/base/_typography.scss */
+.link {
+  font-family: "montserrat-semi_bold";
+  display: inline;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #cd9880;
+  transition: color .2s ease-in-out; }
+  /* line 29, /Users/gen/sites/dr-pardal/src/styles/base/_typography.scss */
+  .link:hover {
+    color: #e4c8bc; }
+
+/* line 1, /Users/gen/sites/dr-pardal/src/styles/layout/_box-model.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 5, /Users/gen/sites/dr-pardal/src/styles/layout/_box-model.scss */
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/* line 1, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
+  outline: 0;
+  z-index: 1; }
+  /* line 10, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+  header .left-container {
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  /* line 14, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+  header .brand {
+    height: 40px;
+    width: 75px;
+    display: inline-block;
+    margin-top: 45px;
+    position: relative; }
+    /* line 21, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+    header .brand::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      font-family: "icons";
+      display: inline-block;
+      vertical-align: middle;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      content: "";
+      color: #00b3ca;
+      font-size: 40px; }
+  /* line 30, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+  header input {
+    display: none; }
+  /* line 34, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+  header label {
+    position: fixed;
+    top: 0;
+    right: 30px;
+    color: #a6a9aa;
+    cursor: pointer;
+    display: none;
+    height: 40px;
+    width: 40px;
+    z-index: 2; }
+    /* line 44, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+    header label span {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      height: 2px;
+      width: 26px;
+      background-color: #a6a9aa;
+      display: block;
+      font-size: 0;
+      margin-top: -1px;
+      transition: background-color .3s;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
+      /* line 55, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+      header label span::before, header label span::after {
+        position: absolute;
+        right: 0;
+        height: 2px;
+        width: 26px;
+        background: #a6a9aa;
+        content: '';
+        transition: -webkit-transform .3s;
+        transition: transform .3s;
+        transition: transform .3s, -webkit-transform .3s; }
+      /* line 65, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+      header label span::before {
+        -webkit-transform: translateY(-300%);
+            -ms-transform: translateY(-300%);
+                transform: translateY(-300%); }
+      /* line 69, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+      header label span::after {
+        -webkit-transform: translateY(300%);
+            -ms-transform: translateY(300%);
+                transform: translateY(300%); }
+  /* line 76, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+  header [type=checkbox]:checked + label span {
+    background-color: transparent; }
+    /* line 79, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+    header [type=checkbox]:checked + label span::before {
+      -webkit-transform: translateY(0) rotate(45deg);
+          -ms-transform: translateY(0) rotate(45deg);
+              transform: translateY(0) rotate(45deg); }
+    /* line 83, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+    header [type=checkbox]:checked + label span::after {
+      -webkit-transform: translateY(0) rotate(-45deg);
+          -ms-transform: translateY(0) rotate(-45deg);
+              transform: translateY(0) rotate(-45deg); }
+  /* line 88, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+  header [type=checkbox]:checked + label ~ .nav {
+    opacity: .98;
+    visibility: visible; }
+    /* line 92, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+    header [type=checkbox]:checked + label ~ .nav li {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+              transform: translateY(0);
+      transition-duration: .5s;
+      transition-property: all; }
+
+@media (max-width: 860px) {
+  /* line 103, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+  header {
+    height: 40px; }
+    /* line 106, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+    header .left-container {
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    /* line 110, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+    header .brand {
+      height: 20px;
+      width: 40px;
+      margin: 20px 0 0 30px; }
+      /* line 115, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+      header .brand::before {
+        font-size: 20px; }
+    /* line 120, /Users/gen/sites/dr-pardal/src/styles/components/_header.scss */
+    header label {
+      display: block; } }
+
+/* line 3, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+.nav {
+  -webkit-flex: 0 0 66.67%;
+      -ms-flex: 0 0 66.67%;
+          flex: 0 0 66.67%;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 9, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+  .nav li {
+    -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    text-align: center; }
+  /* line 14, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+  .nav a {
+    font-family: "montserrat-semi_bold";
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 13px;
+    line-height: 0.8125rem;
+    color: #232020;
+    letter-spacing: .15em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .15s ease-in-out; }
+    /* line 24, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+    .nav a:hover, .nav a.active {
+      color: #00b3ca; }
+
+@media (max-width: 860px) {
+  /* line 32, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+  .nav {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start;
+    background-color: #f0f0f0;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    opacity: 0;
+    padding: 0 35px 10%;
+    transition: all .2s ease-in-out;
+    transition-property: none;
+    visibility: hidden;
+    z-index: 1; }
+    /* line 46, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+    .nav li {
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-flex: 0 0 auto;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      line-height: 80px;
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+          -ms-transform: translateY(20px);
+              transform: translateY(20px);
+      transition-duration: 0ms; }
+      /* line 54, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+      .nav li a {
+        font-family: "montserrat-semi_bold";
+        font-size: 36px;
+        font-size: 2.25rem;
+        line-height: 36px;
+        line-height: 2.25rem; }
+    /* line 61, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+    .nav li:nth-child(1) {
+      transition-delay: calc(70ms * 1); }
+    /* line 61, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+    .nav li:nth-child(2) {
+      transition-delay: calc(70ms * 2); }
+    /* line 61, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+    .nav li:nth-child(3) {
+      transition-delay: calc(70ms * 3); }
+    /* line 61, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+    .nav li:nth-child(4) {
+      transition-delay: calc(70ms * 4); } }
+
+@media (max-width: 760px) and (orientation: landscape) {
+  /* line 69, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+  .nav {
+    padding-bottom: 5%; }
+    /* line 72, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+    .nav li {
+      line-height: 50px; }
+      /* line 75, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+      .nav li a {
+        font-size: 22px;
+        font-size: 1.375rem;
+        line-height: 22px;
+        line-height: 1.375rem; } }
+
+@media (max-width: 600px) {
+  /* line 86, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+  .nav li {
+    line-height: 50px; }
+    /* line 89, /Users/gen/sites/dr-pardal/src/styles/components/_menu.scss */
+    .nav li a {
+      font-size: 22px;
+      font-size: 1.375rem;
+      line-height: 22px;
+      line-height: 1.375rem; } }
+
+/* line 1, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+footer {
+  height: 240px;
+  width: 100%;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #020202; }
+  /* line 7, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+  footer .logos {
+    -webkit-flex: 0 0 33.33%;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    /* line 14, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+    footer .logos li:first-child {
+      margin-right: 20px; }
+    /* line 18, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+    footer .logos li i {
+      color: #a6a9aa;
+      font-size: 95px; }
+  /* line 25, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+  footer p {
+    font-family: "montserrat-ultra_light";
+    color: #fff;
+    -webkit-flex: 1 1 50%;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    font-size: 13px;
+    text-align: left;
+    text-transform: uppercase; }
+    /* line 34, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+    footer p a {
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      text-decoration: none; }
+
+@media (max-width: 920px) {
+  /* line 43, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+  footer {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    height: auto;
+    padding: 25px 20px; }
+    /* line 48, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+    footer .logos {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+      margin-bottom: 18px; }
+      /* line 52, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+      footer .logos li i {
+        font-size: 48px; }
+    /* line 57, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+    footer .right-container {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; }
+      /* line 60, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+      footer .right-container p {
+        font-size: 10px;
+        text-align: center; }
+        /* line 64, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+        footer .right-container p:first-child {
+          -webkit-flex: 1 0 auto;
+              -ms-flex: 1 0 auto;
+                  flex: 1 0 auto; } }
+
+@media (max-width: 510px) {
+  /* line 76, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+  footer .right-container {
+    -webkit-flex: 0 0 275px;
+        -ms-flex: 0 0 275px;
+            flex: 0 0 275px; }
+    /* line 79, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+    footer .right-container p {
+      font-size: 10px;
+      text-align: center; }
+      /* line 83, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+      footer .right-container p:first-child {
+        -webkit-flex: 0 0 275px;
+            -ms-flex: 0 0 275px;
+                flex: 0 0 275px; }
+    /* line 88, /Users/gen/sites/dr-pardal/src/styles/components/_footer.scss */
+    footer .right-container span {
+      display: none; } }
+
+/* line 1, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+.separator {
+  -webkit-flex: 0 0 33.33%;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  /* line 9, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+  .separator .text-wrapper {
+    max-width: 170px;
+    text-align: center; }
+  /* line 14, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+  .separator i {
+    font-size: 65px;
+    margin-bottom: 12px; }
+  /* line 19, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+  .separator h2 {
+    line-height: 35px; }
+  /* line 23, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+  .separator + .right-container {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    /* line 28, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+    .separator + .right-container .text-wrapper {
+      max-width: 385px;
+      text-align: center; }
+      /* line 32, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+      .separator + .right-container .text-wrapper h2 {
+        color: #272525;
+        padding: 0 40px; }
+    /* line 38, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+    .separator + .right-container > h2 {
+      display: none;
+      text-align: center; }
+    /* line 43, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+    .separator + .right-container p {
+      color: #959595;
+      line-height: 24px;
+      margin-top: 22px; }
+
+@media (max-width: 768px) {
+  /* line 52, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+  .separator {
+    height: 125px; }
+    /* line 55, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+    .separator i {
+      font-size: 40px;
+      margin-bottom: 0; }
+    /* line 60, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+    .separator h2 {
+      display: none; }
+    /* line 66, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+    .separator + .right-container .text-wrapper {
+      display: none; }
+    /* line 70, /Users/gen/sites/dr-pardal/src/styles/components/_separator.scss */
+    .separator + .right-container > h2 {
+      font-size: 15px;
+      font-size: 0.9375rem;
+      line-height: 19px;
+      line-height: 1.1875rem;
+      display: block; } }
+
+/* line 1, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+.hero-banner {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  height: calc(100vh - 120px); }
+  /* line 5, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .left-container {
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    position: relative; }
+  /* line 12, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .trigger {
+    height: 0;
+    width: 10px;
+    display: none; }
+  /* line 18, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .brand-bottom {
+    height: 32px;
+    width: 220px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: url("images/logo_2.jpg");
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  /* line 26, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .text-container {
+    -webkit-flex: 0 0 0;
+        -ms-flex: 0 0 0;
+            flex: 0 0 0;
+    height: 212px;
+    overflow: visible;
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+    /* line 33, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+    .hero-banner .text-container div {
+      position: absolute;
+      left: -105px; }
+    /* line 37, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+    .hero-banner .text-container span {
+      font-family: "montserrat-light";
+      font-size: 22px;
+      font-size: 1.375rem;
+      line-height: 28px;
+      line-height: 1.75rem;
+      display: block;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+    /* line 46, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+    .hero-banner .text-container h1 + span {
+      display: none; }
+  /* line 51, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .right-container {
+    background-color: #f0f0f0;
+    height: 100%;
+    position: relative;
+    z-index: -1; }
+    /* line 57, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+    .hero-banner .right-container::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url("images/hero-banner.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      height: 80%;
+      z-index: 0; }
+
+@media (max-width: 1600px) {
+  /* line 73, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .right-container::before {
+    height: 60%; } }
+
+@media (max-width: 1400px) {
+  /* line 81, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner span {
+    font-size: 24px; }
+  /* line 85, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner h1 {
+    font-size: 70px;
+    font-size: 4.375rem;
+    line-height: 79px;
+    line-height: 4.9375rem; } }
+
+@media (max-width: 860px) {
+  /* line 92, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner {
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start;
+    height: calc(100vh - 40px); }
+    /* line 96, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+    .hero-banner .brand-bottom {
+      display: none; }
+    /* line 100, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+    .hero-banner .text-container {
+      position: fixed;
+      top: 140px;
+      left: 30px;
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; }
+      /* line 105, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+      .hero-banner .text-container h1 + span {
+        display: block;
+        margin: 18px 0 0; }
+      /* line 110, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+      .hero-banner .text-container div {
+        left: 0; }
+    /* line 115, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+    .hero-banner .left-container {
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+                  -ms-grid-row-align: flex-start;
+              align-items: flex-start;
+      padding: 85px 0 0 30px; }
+    /* line 120, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+    .hero-banner .right-container::before {
+      height: 50%; } }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  /* line 128, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .left-container {
+    padding-top: 10%; }
+  /* line 132, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .right-container::before {
+    height: 70%; } }
+
+@media (max-width: 736px) {
+  /* line 140, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner h1 {
+    font-size: 35px;
+    font-size: 2.1875rem;
+    line-height: 40px;
+    line-height: 2.5rem; }
+  /* line 144, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .trigger {
+    position: absolute;
+    top: 20%; }
+  /* line 149, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .text-container span {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    margin-bottom: 10px; }
+  /* line 155, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .text-container h1 + span {
+    margin: 8px 0 0; } }
+
+@media (max-width: 860px) and (orientation: portrait) {
+  /* line 163, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .trigger {
+    position: absolute;
+    top: 30%;
+    display: block;
+    height: 1px; } }
+
+@media (max-width: 460px) {
+  /* line 173, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .right-container::before {
+    background-position: -95px center;
+    height: 60%; } }
+
+@media (max-width: 414px) and (orientation: portrait) {
+  /* line 181, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .trigger {
+    position: absolute;
+    top: 25%; } }
+
+@media (max-width: 375px) and (orientation: portrait) {
+  /* line 187, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .trigger {
+    position: absolute;
+    top: 20%; } }
+
+@media (max-width: 320px) {
+  /* line 195, /Users/gen/sites/dr-pardal/src/styles/sections/_hero-banner.scss */
+  .hero-banner .trigger {
+    display: none;
+    height: 0; } }
+
+/* line 4, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+.exams .separator {
+  background-color: #29334c;
+  color: #fff; }
+  /* line 8, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams .separator + .right-container > h2 {
+    color: #29334c; }
+
+/* line 15, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+.exams-grid-container::before {
+  -webkit-flex: 0 0 33.33%;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  content: '';
+  display: block; }
+
+/* line 23, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+.exams-grid {
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -1px; }
+  /* line 28, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid li {
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    height: 270px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 45px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    transition-duration: 0ms; }
+    /* line 46, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li span {
+      font-family: "montserrat-semi_bold";
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 11px;
+      letter-spacing: .075em; }
+    /* line 54, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li p {
+      font-family: "montserrat-light";
+      display: inline;
+      letter-spacing: .05em;
+      line-height: 24px;
+      opacity: 0;
+      transition-property: opacity; }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(1) {
+      transition-delay: calc(120ms * 1); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(1) p {
+        transition-delay: calc(120ms * 1); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(2) {
+      transition-delay: calc(120ms * 2); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(2) p {
+        transition-delay: calc(120ms * 2); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(3) {
+      transition-delay: calc(120ms * 3); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(3) p {
+        transition-delay: calc(120ms * 3); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(4) {
+      transition-delay: calc(120ms * 4); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(4) p {
+        transition-delay: calc(120ms * 4); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(5) {
+      transition-delay: calc(120ms * 5); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(5) p {
+        transition-delay: calc(120ms * 5); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(6) {
+      transition-delay: calc(120ms * 6); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(6) p {
+        transition-delay: calc(120ms * 6); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(7) {
+      transition-delay: calc(120ms * 7); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(7) p {
+        transition-delay: calc(120ms * 7); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(8) {
+      transition-delay: calc(120ms * 8); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(8) p {
+        transition-delay: calc(120ms * 8); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(9) {
+      transition-delay: calc(120ms * 9); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(9) p {
+        transition-delay: calc(120ms * 9); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(10) {
+      transition-delay: calc(120ms * 10); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(10) p {
+        transition-delay: calc(120ms * 10); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(11) {
+      transition-delay: calc(120ms * 11); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(11) p {
+        transition-delay: calc(120ms * 11); }
+    /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li:nth-child(12) {
+      transition-delay: calc(120ms * 12); }
+      /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li:nth-child(12) p {
+        transition-delay: calc(120ms * 12); }
+  /* line 76, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid.animated li {
+    opacity: 1;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    transition-duration: .4s;
+    transition-property: all; }
+    /* line 82, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid.animated li p {
+      opacity: 1;
+      transition-duration: .8s;
+      transition-property: all; }
+  /* line 90, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid .expand-button {
+    font-family: "montserrat-semi_bold";
+    color: #232020;
+    cursor: pointer;
+    display: none;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    font-size: 18px;
+    height: 100px;
+    text-transform: uppercase; }
+
+@media (max-width: 1735px) {
+  /* line 105, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid li {
+    -webkit-flex-basis: 33.33%;
+        -ms-flex-preferred-size: 33.33%;
+            flex-basis: 33.33%;
+    height: 240px;
+    padding: 0 25px; }
+    /* line 110, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li br {
+      display: none; } }
+
+@media (max-width: 1200px) {
+  /* line 120, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid.expanded li {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    color: #232020;
+    height: 240px; }
+    /* line 126, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid.expanded li.expand-button {
+      display: none; }
+  /* line 131, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid li {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+  /* line 135, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid .collapse {
+    border: 0;
+    color: #f0f0f0;
+    height: 0; }
+  /* line 141, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid .expand-button {
+    display: inherit; } }
+
+@media (max-width: 768px) {
+  /* line 148, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid {
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    /* line 151, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid.expanded li {
+      height: 125px; }
+    /* line 155, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid li {
+      -webkit-flex: 0 0 50%;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      height: 125px; }
+      /* line 159, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li span {
+        font-size: 10px;
+        left: 10px;
+        top: 10px; }
+      /* line 165, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+      .exams-grid li p {
+        font-size: 10px;
+        font-size: 0.625rem;
+        line-height: 15px;
+        line-height: 0.9375rem; }
+    /* line 170, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+    .exams-grid .expand-button {
+      font-size: 10px; } }
+
+@media (max-width: 420px) {
+  /* line 178, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid.expanded .empty {
+    display: none; }
+  /* line 182, /Users/gen/sites/dr-pardal/src/styles/sections/_exams.scss */
+  .exams-grid li {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
+
+/* line 4, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+.team .separator {
+  background-color: #020202;
+  color: #e5e7e8; }
+
+/* line 10, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+.team-grid {
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  /* line 15, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid + .image-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1200px; }
+    /* line 19, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid + .image-wrapper::before {
+      -webkit-flex: 0 0 33.33%;
+          -ms-flex: 0 0 33.33%;
+              flex: 0 0 33.33%;
+      content: ''; }
+    /* line 25, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid + .image-wrapper::after {
+      -webkit-flex: 0 0 66.67%;
+          -ms-flex: 0 0 66.67%;
+              flex: 0 0 66.67%;
+      background-image: url("images/lab.jpg");
+      background-position: right;
+      background-size: cover;
+      content: '';
+      opacity: 0;
+      -webkit-transform: translate3d(0, 50%, 0);
+              transform: translate3d(0, 50%, 0); }
+    /* line 36, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid + .image-wrapper.animated::after {
+      opacity: 1;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      transition-delay: 120ms;
+      transition-duration: .4s;
+      transition-property: all; }
+  /* line 46, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid.animated li {
+    opacity: 1;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    transition-duration: .5s;
+    transition-property: all; }
+    /* line 52, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid.animated li p {
+      opacity: 1;
+      transition-duration: .8s;
+      transition-property: all; }
+  /* line 60, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid li {
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex: 1 1 33.33%;
+        -ms-flex: 1 1 33.33%;
+            flex: 1 1 33.33%;
+    height: 400px;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    transition-duration: 0ms; }
+    /* line 69, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid li div {
+      color: #fff;
+      text-align: center; }
+    /* line 74, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid li:nth-child(1) {
+      background-color: #59595b; }
+    /* line 78, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid li:nth-child(2) {
+      background-color: #818183; }
+    /* line 82, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid li:nth-child(3) {
+      background-color: #a6a9aa; }
+    /* line 87, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid li:nth-child(1) {
+      transition-delay: calc(120ms * 1); }
+      /* line 90, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+      .team-grid li:nth-child(1) p {
+        transition-delay: calc(130ms * 1); }
+    /* line 87, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid li:nth-child(2) {
+      transition-delay: calc(120ms * 2); }
+      /* line 90, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+      .team-grid li:nth-child(2) p {
+        transition-delay: calc(130ms * 2); }
+    /* line 87, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid li:nth-child(3) {
+      transition-delay: calc(120ms * 3); }
+      /* line 90, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+      .team-grid li:nth-child(3) p {
+        transition-delay: calc(130ms * 3); }
+  /* line 97, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid span {
+    font-family: "montserrat-light";
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    display: block; }
+  /* line 104, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid h1 {
+    font-family: "montserrat-hairline";
+    font-size: 120px;
+    font-size: 7.5rem;
+    line-height: 128px;
+    line-height: 8rem;
+    font-weight: 500; }
+  /* line 111, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid h2 {
+    font-family: "montserrat-light";
+    font-size: 26px;
+    font-size: 1.625rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    letter-spacing: .04em; }
+
+@media (max-width: 940px) {
+  /* line 123, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid li {
+    height: 280px; }
+  /* line 127, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid h1 {
+    font-size: 100px;
+    font-size: 6.25rem;
+    line-height: 100px;
+    line-height: 6.25rem; }
+  /* line 131, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid span,
+  .team-grid h2 {
+    font-size: 20px;
+    font-size: 1.25rem; } }
+
+@media (max-width: 768px) {
+  /* line 139, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+  .team-grid {
+    float: right;
+    width: 66.67%; }
+    /* line 143, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid li {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+      height: 125px; }
+    /* line 148, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid span {
+      font-size: 10px;
+      font-size: 0.625rem;
+      line-height: 16px;
+      line-height: 1rem; }
+    /* line 152, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid h1 {
+      font-size: 50px;
+      font-size: 3.125rem;
+      line-height: 50px;
+      line-height: 3.125rem; }
+    /* line 156, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid h2 {
+      font-size: 10px;
+      font-size: 0.625rem;
+      line-height: 10px;
+      line-height: 0.625rem; }
+    /* line 160, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+    .team-grid + .image-wrapper {
+      clear: both;
+      height: 425px; }
+      /* line 164, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+      .team-grid + .image-wrapper::before {
+        display: none; }
+      /* line 168, /Users/gen/sites/dr-pardal/src/styles/sections/_team.scss */
+      .team-grid + .image-wrapper::after {
+        background-position: bottom right;
+        -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%; } }
+
+/* line 4, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+.partnerships .separator {
+  background-color: #cd9880;
+  color: #fff; }
+  /* line 8, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+  .partnerships .separator + .right-container {
+    color: #cd9880;
+    display: none;
+    height: 250px; }
+
+/* line 16, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+.partners-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  /* line 21, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+  .partners-grid li {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+    height: 400px;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 0;
+    position: relative;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(1) {
+      transition-delay: calc(120ms * 1); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(2) {
+      transition-delay: calc(120ms * 2); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(3) {
+      transition-delay: calc(120ms * 3); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(4) {
+      transition-delay: calc(120ms * 4); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(5) {
+      transition-delay: calc(120ms * 5); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(6) {
+      transition-delay: calc(120ms * 6); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(7) {
+      transition-delay: calc(120ms * 7); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(8) {
+      transition-delay: calc(120ms * 8); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(9) {
+      transition-delay: calc(120ms * 9); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(10) {
+      transition-delay: calc(120ms * 10); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(11) {
+      transition-delay: calc(120ms * 11); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(12) {
+      transition-delay: calc(120ms * 12); }
+    /* line 32, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li:nth-child(13) {
+      transition-delay: calc(120ms * 13); }
+    /* line 37, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-position: center;
+      background-repeat: no-repeat; }
+  /* line 46, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+  .partners-grid.animated li {
+    opacity: 1;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    transition-duration: .4s;
+    transition-property: all; }
+
+@media (max-width: 1140px) {
+  /* line 57, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+  .partners-grid li a {
+    background-size: 100%; } }
+
+@media (max-width: 768px) {
+  /* line 65, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+  .partnerships {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partnerships .separator + .right-container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 125px; }
+  /* line 75, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+  .partners-grid li {
+    -webkit-flex-basis: 33.33%;
+        -ms-flex-preferred-size: 33.33%;
+            flex-basis: 33.33%;
+    height: 125px; }
+    /* line 79, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+    .partners-grid li a {
+      background-size: 80%; } }
+
+@media (max-width: 540px) {
+  /* line 87, /Users/gen/sites/dr-pardal/src/styles/sections/_partnerships.scss */
+  .partners-grid li a {
+    background-size: 100%; } }
+
+/* line 1, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+.contacts {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  /* line 4, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+  .contacts .contacts-wrapper {
+    -webkit-flex: 0 0 33.33%;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    /* line 10, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .contacts-wrapper div {
+      -webkit-flex: 0 1 265px;
+          -ms-flex: 0 1 265px;
+              flex: 0 1 265px; }
+    /* line 14, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .contacts-wrapper h2 {
+      margin-bottom: 15px; }
+      /* line 17, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+      .contacts .contacts-wrapper h2:last-of-type {
+        margin-top: 65px; }
+    /* line 22, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .contacts-wrapper p {
+      color: #959595;
+      line-height: 24px; }
+    /* line 27, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .contacts-wrapper .link {
+      font-family: "montserrat-light";
+      display: inline-block;
+      line-height: 24px;
+      margin-top: 1px; }
+      /* line 34, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+      .contacts .contacts-wrapper .link p,
+      .contacts .contacts-wrapper .link + p {
+        color: #cd9880; }
+      /* line 39, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+      .contacts .contacts-wrapper .link.fax {
+        color: #959595; }
+  /* line 45, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+  .contacts .map-wrapper {
+    -webkit-flex: 0 0 66.67%;
+        -ms-flex: 0 0 66.67%;
+            flex: 0 0 66.67%;
+    height: 800px;
+    position: relative; }
+    /* line 51, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .map-wrapper > div {
+      height: 100%;
+      width: 100%; }
+    /* line 55, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .map-wrapper .actions {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 290x;
+      width: 150px; }
+    /* line 60, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .map-wrapper button {
+      height: 145px;
+      width: 150px;
+      background-color: #fff;
+      border: 0;
+      cursor: pointer;
+      outline: 0;
+      position: relative; }
+      /* line 69, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+      .contacts .map-wrapper button::after {
+        font-family: "icons";
+        display: inline-block;
+        vertical-align: middle;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        color: #bdbdbd;
+        content: "";
+        font-size: 28px; }
+      /* line 78, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+      .contacts .map-wrapper button:last-child::after {
+        font-family: "icons";
+        display: inline-block;
+        vertical-align: middle;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        content: ""; }
+
+/* line 86, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+a[href^="http://maps.google.com/maps"] {
+  display: none !important; }
+
+/* line 90, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+a[href^="https://maps.google.com/maps"] {
+  display: none !important; }
+
+/* line 94, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+.gmnoprint a,
+.gmnoprint span,
+.gm-style-cc {
+  display: none; }
+
+@media (max-width: 960px) {
+  /* line 103, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+  .contacts .contacts-wrapper {
+    background-color: #f0f0f0;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 53px 30px;
+    text-align: left; }
+    /* line 110, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .contacts-wrapper div {
+      max-width: 200px; }
+    /* line 114, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .contacts-wrapper h2 {
+      font-size: 15px;
+      font-size: 0.9375rem;
+      line-height: 22px;
+      line-height: 1.375rem;
+      margin: 0 0 10px; }
+      /* line 119, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+      .contacts .contacts-wrapper h2:last-of-type {
+        margin-top: 30px; }
+    /* line 124, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .contacts-wrapper p {
+      font-size: 12px;
+      font-size: 0.75rem;
+      line-height: 26px;
+      line-height: 1.625rem; }
+    /* line 128, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .contacts-wrapper .link {
+      font-size: 12px;
+      font-size: 0.75rem;
+      line-height: 26px;
+      line-height: 1.625rem; }
+  /* line 135, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+  .contacts .map-wrapper {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    height: 450px; }
+    /* line 139, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+    .contacts .map-wrapper .actions {
+      width: 73px; }
+      /* line 142, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+      .contacts .map-wrapper .actions button {
+        height: 73px;
+        width: 73px; } }
+
+@media (max-width: 768px) {
+  /* line 152, /Users/gen/sites/dr-pardal/src/styles/sections/_contacts.scss */
+  .contacts .map-wrapper .actions {
+    display: none; } }
+
+/* line 1, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+.schedule {
+  margin-top: 100px; }
+  /* line 4, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule .separator {
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start;
+    height: 200px; }
+    /* line 8, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .separator h2 {
+      position: relative; }
+    /* line 12, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .separator h2::after {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      line-height: 13px;
+      line-height: 0.8125rem;
+      color: #cd9880;
+      content: 'Agora fechado';
+      display: none;
+      letter-spacing: .075em;
+      margin-top: 5px;
+      text-align: left;
+      text-transform: initial; }
+    /* line 25, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .separator.closed h2::after {
+      display: block; }
+  /* line 31, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule .right-container {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-right: 150px; }
+  /* line 37, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule .timeline {
+    height: 80px;
+    width: 100%;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    /* line 44, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .timeline.weekend .line-container {
+      margin-right: 73px; }
+    /* line 48, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .timeline.weekend .line {
+      display: inline-block;
+      width: 35%; }
+    /* line 53, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .timeline.weekend .disabled {
+      width: 5%; }
+  /* line 59, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule .line-container {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    position: relative; }
+    /* line 63, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line-container .hour {
+      margin-right: 0; }
+  /* line 68, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule label {
+    font-family: "montserrat-semi_bold";
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 16px;
+    line-height: 1rem;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    padding-right: 25px;
+    text-transform: uppercase; }
+  /* line 77, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule .hour {
+    font-family: "montserrat-light";
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 13px;
+    line-height: 0.8125rem;
+    color: #959595;
+    margin: 0 15px; }
+  /* line 85, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule .line {
+    background-color: #e4c8bc;
+    height: 10px;
+    margin: 2px 0 0;
+    position: relative; }
+    /* line 91, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line.disabled {
+      background-color: #d0d1d3;
+      margin-right: -3px; }
+  /* line 97, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule .line-filler {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #cd9880; }
+    /* line 102, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line-filler::before {
+      height: 0;
+      width: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 10px solid #cd9880;
+      position: absolute;
+      top: -18px;
+      right: -7px;
+      content: '';
+      display: none; }
+    /* line 110, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line-filler::after {
+      position: absolute;
+      right: 0;
+      bottom: -25px;
+      font-family: "montserrat-semi_bold";
+      color: #cd9880;
+      content: attr(data-hour);
+      display: none;
+      font-size: 13px;
+      -webkit-transform: translateX(100%);
+          -ms-transform: translateX(100%);
+              transform: translateX(100%); }
+    /* line 121, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line-filler span {
+      position: absolute;
+      right: 0;
+      bottom: -45px;
+      font-family: "montserrat-light";
+      color: #cd9880;
+      display: none;
+      font-size: 13px;
+      margin: 0;
+      overflow: visible;
+      -webkit-transform: translateX(100%);
+          -ms-transform: translateX(100%);
+              transform: translateX(100%);
+      width: 120px; }
+    /* line 134, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line-filler.active {
+      border-right: 1px solid #fff; }
+      /* line 137, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+      .schedule .line-filler.active::after, .schedule .line-filler.active::before {
+        display: block; }
+    /* line 143, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line-filler.with-warning span {
+      display: block; }
+
+@media (max-width: 820px) {
+  /* line 150, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 60px; }
+    /* line 154, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .separator {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+      height: auto;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin-bottom: 55px;
+      padding: 0 30px; }
+      /* line 161, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+      .schedule .separator h2::after {
+        position: absolute;
+        top: 11px;
+        left: 110px;
+        font-size: 10px;
+        font-size: 0.625rem;
+        margin: 0;
+        width: 100%; }
+    /* line 170, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .right-container {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+      padding: 0 30px; } }
+
+@media (max-width: 768px) {
+  /* line 178, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .schedule {
+    margin-top: 20px; }
+    /* line 181, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .separator {
+      margin-bottom: 15px; }
+      /* line 184, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+      .schedule .separator h2 {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 0; }
+    /* line 191, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule label,
+    .schedule .hour {
+      font-size: 10px;
+      font-size: 0.625rem;
+      line-height: 10px;
+      line-height: 0.625rem;
+      padding: 0; }
+    /* line 198, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .timeline {
+      height: 60px; }
+    /* line 202, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line {
+      height: 5px;
+      margin: 3px 0 0; }
+    /* line 208, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line-filler::after {
+      font-size: 10px;
+      font-size: 0.625rem;
+      line-height: 10px;
+      line-height: 0.625rem;
+      bottom: -20px;
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0); }
+    /* line 215, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .schedule .line-filler span {
+      font-size: 10px;
+      font-size: 0.625rem;
+      line-height: 10px;
+      line-height: 0.625rem;
+      bottom: -35px;
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
+      width: 87px; } }
+
+@media (max-width: 320px) {
+  /* line 227, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+  .weekend .line-container {
+    margin-right: 60px;
+    position: relative; }
+    /* line 231, /Users/gen/sites/dr-pardal/src/styles/sections/_schedule.scss */
+    .weekend .line-container span {
+      position: absolute;
+      top: 0;
+      right: 0; } }

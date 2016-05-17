@@ -1,0 +1,174 @@
+$team-items: 3;
+
+.team {
+  .separator {
+    background-color: conf('color.black');
+    color: conf('color.light-gray');
+  }
+}
+
+.team-grid {
+  @include centering-container;
+
+  width: 100%;
+
+  + .image-wrapper {
+    display: flex;
+    height: 1200px;
+
+    &::before {
+      @include left-container;
+
+      content: '';
+    }
+
+    &::after {
+      @include right-container;
+
+      background-image: url('images/lab.jpg');
+      background-position: right;
+      background-size: cover;
+      content: '';
+      opacity: 0;
+      transform: translate3d(0, 50%, 0);
+    }
+
+    &.animated::after {
+      opacity: 1;
+      transform: none;
+      transition-delay: 120ms;
+      transition-duration: .4s;
+      transition-property: all;
+    }
+  }
+
+  &.animated {
+    li {
+      opacity: 1;
+      transform: none;
+      transition-duration: .5s;
+      transition-property: all;
+
+      p {
+        opacity: 1;
+        transition-duration: .8s;
+        transition-property: all;
+      }
+    }
+  }
+
+  li {
+    @include centering-container;
+
+    flex: 1 1 33.33%;
+    height: 400px;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    transition-duration: 0ms;
+
+    div {
+      color: conf('color.white');
+      text-align: center;
+    }
+
+    &:nth-child(1) {
+      background-color: #59595b; //scss-lint:disable ColorVariable
+    }
+
+    &:nth-child(2) {
+      background-color: #818183; //scss-lint:disable ColorVariable
+    }
+
+    &:nth-child(3) {
+      background-color: conf('color.dark-gray');
+    }
+
+    @for $i from 1 through $team-items {
+      &:nth-child(#{$i}) {
+        transition-delay: calc(120ms * #{$i});
+
+        p {
+          transition-delay: calc(130ms * #{$i});
+        }
+      }
+    }
+  }
+
+  span {
+    @include conf('font.montserrat.light');
+    @include font-size(26, 30);
+
+    display: block;
+  }
+
+  h1 {
+    @include conf('font.montserrat.hairline');
+    @include font-size(120, 128);
+
+    font-weight: 500;
+  }
+
+  h2 {
+    @include conf('font.montserrat.light');
+    @include font-size(26);
+
+    font-weight: normal;
+    text-transform: capitalize;
+    letter-spacing: .04em;
+  }
+}
+
+@include media('<=940px') {
+  .team-grid {
+    li {
+      height: 280px;
+    }
+
+    h1 {
+      @include font-size(100, 100);
+    }
+
+    span,
+    h2 {
+      @include font-size(20);
+    }
+  }
+}
+
+@include media('<=tablet') {
+  .team-grid {
+    float: right;
+    width: 66.67%;
+
+    li {
+      flex-basis: 100%;
+      height: 125px;
+    }
+
+    span {
+      @include font-size(10, 16);
+    }
+
+    h1 {
+      @include font-size(50, 50);
+    }
+
+    h2 {
+      @include font-size(10, 10);
+    }
+
+    + .image-wrapper {
+      clear: both;
+      height: 425px;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        background-position: bottom right;
+        flex-basis: 100%;
+      }
+    }
+  }
+}

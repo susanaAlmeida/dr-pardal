@@ -1,0 +1,26 @@
+section#schedule.schedule
+  .separator
+    .text-wrapper
+      h2 Horário
+  
+  .right-container
+    .timeline.week
+      label Seg-Sex
+      span.hour 08H30
+      .line-container
+        .line
+          .line-filler(data-hour="10H30")
+            span Prestes a encerrar
+
+      span.hour 19H30
+    
+    .timeline.weekend
+      label Sábado
+      span.hour 09H00
+      .line-container
+        .line.disabled
+        .line
+          .line-filler(data-hour="10H30")
+            span Prestes a encerrar
+        span.hour 13H00
+    

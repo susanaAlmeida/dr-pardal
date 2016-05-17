@@ -1,0 +1,16 @@
+@include config-set('color', (
+  'blue':        #00b3ca,
+  'purple':      #29334c,
+  'white':       #fff,
+  'light-gray':  #e5e7e8,
+  'gray':        #f0f0f0,
+  'dark-gray':   #a6a9aa,
+  'gray-font':   #959595,
+  'gold':        #cd9880,
+  'light-gold':  #e4c8bc,
+  'black':       #020202,
+  'black-type':  #232020,
+  'black-title': #272525
+), true);
+
+$header-background: rgba(255, 255, 255, .97);

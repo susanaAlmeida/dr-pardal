@@ -1,0 +1,45 @@
+doctype html
+
+block vars
+
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='description' content='O Laboratório de Anatomia Patológica Doutor Fernando Pardal Oliveira está localizado em Braga e tem a como Director Técnico o Doutor Fernando Pardal Oliveira. Procuramos responder atempadamente às solicitações dos nossos Clientes nas vertentes de exames citológicos e histológicos.')
+    meta(name='keywords' content='laboratório, laboratório, doutor pardal, dr pardal, clínica doutor pardal, clínica dr pardal fernando pardal, anatomia patológica, laboratório de anatomia doutor fernando pardal, laboratório de anatomia dr fernando pardal, analises braga, laboratorio braga, analises patológicas, exames,laboratórios, histológico, biópsia, ressecção cirúrgica, imuno histoquímica, citológico, cervico vaginal, esfoliativo, método de camada, hpv, cobas nc-gc')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name="format-detection" content="telephone=no")
+
+    link(rel="shortcut icon" href="images/favicon.png" type="image/x-icon")
+
+  //- build:css /css/app.css
+  link(rel='stylesheet', href='styles/main.css')
+
+  block stylesheets
+  //- endbuild
+
+  body
+
+    | <!--[if lt IE 10]>
+    |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    | <![endif]-->
+
+    include ../partials/header.jade
+
+    block body
+
+    include ../partials/footer.jade
+
+    script(src='http://maps.googleapis.com/maps/api/js')
+
+    | <!-- build:js({./,dist}) scripts/pages/!{pageName}.js -->
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/waypoints/lib/jquery.waypoints.js')
+    script(src='/bower_components/moment/moment.js')
+    script(src='/bower_components/moment-timezone/builds/moment-timezone-with-data.js')
+    script(src='scripts/vendor/modernizr.js')
+    script(src='scripts/app.js')
+
+    block scripts
+
+    |<!-- endbuild -->

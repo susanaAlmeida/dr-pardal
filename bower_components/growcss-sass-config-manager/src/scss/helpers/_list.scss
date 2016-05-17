@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/// Return list-map from `$list` and ensure input list-map is list-of-lists
+///
+/// @access public
+///
+/// @param  {List} $list
+///
+/// @return {List}
+@function list-map-check($list) {
+  @if length($list) == 2 and length(nth($list, 1)) == 1 {
+    @return append((), $list, "comma");
+  }
+
+  @return $list;
+}
+
+/// Extracts a slice of a list
+///
+/// @access private
+///
+/// @param  {List}   $list  The list to extract
+/// @param  {Number} $start The start index to extract
+/// @param  {Number} $end   The end index to extract
+///
+/// @return {List}          The extracted list
+@function list-slice($list, $start: 1, $end: length($list)) {
+  $output: ();
+
+  @if $start >= 1 and $end >= $start {
+    @for $i from $start through $end {
+      $output: append($output, nth($list, $i));
+    }
+  }
+
+  @return $output;
+}

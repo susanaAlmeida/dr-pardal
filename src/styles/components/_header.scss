@@ -1,0 +1,124 @@
+header {
+  @include position(fixed, 0 0 0 0);
+
+  background-color: $header-background;
+  display: flex;
+  height: conf('height.header');
+  outline: 0;
+  z-index: 1;
+
+  .left-container {
+    @include centering-container;
+  }
+
+  .brand {
+    @include size(75px 40px);
+
+    display: inline-block;
+    margin-top: 45px;
+    position: relative;
+
+    &::before {
+      @include position(absolute, 0 0 0 0);
+      @include icon('logo');
+
+      color: conf('color.blue');
+      font-size: 40px;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    @include position(fixed, 0 30px null null);
+
+    color: conf('color.dark-gray');
+    cursor: pointer;
+    display: none;
+    height: conf('height.header-mobile');
+    width: 40px;
+    z-index: 2;
+
+    span {
+      @include position(absolute, 50% 0 null null);
+      @include size(26px 2px);
+
+      background-color: conf('color.dark-gray');
+      display: block;
+      font-size: 0;
+      margin-top: -1px;
+      transition: background-color .3s;
+      user-select: none;
+
+      &::before,
+      &::after {
+        @include position(absolute, null 0 null null);
+        @include size(26px 2px);
+
+        background: conf('color.dark-gray');
+        content: '';
+        transition: transform .3s;
+      }
+
+      &::before {
+        transform: translateY(-300%);
+      }
+
+      &::after {
+        transform: translateY(300%);
+      }
+    }
+  }
+
+  [type=checkbox]:checked {
+    + label span {
+      background-color: transparent;
+
+      &::before {
+        transform: translateY(0) rotate(45deg);
+      }
+
+      &::after {
+        transform: translateY(0) rotate(-45deg);
+      }
+    }
+
+    +label ~ .nav {
+      opacity: .98;
+      visibility: visible;
+
+      li {
+        opacity: 1;
+        transform: translateY(0);
+        transition-duration: .5s;
+        transition-property: all;
+      }
+    }
+  }
+}
+
+@include media('<=860px') {
+  header {
+    height: conf('height.header-mobile');
+
+    .left-container {
+      justify-content: flex-start;
+    }
+
+    .brand {
+      @include size(40px 20px);
+
+      margin: 20px 0 0 30px;
+
+      &::before {
+        font-size: 20px;
+      }
+    }
+
+    label {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/// The delimiter of configuration path
+///
+/// @access private
+$config-delimiter: "." !default;
+
+/// The configuration storage
+///
+/// @access private
+$config-attr: () !default;
+
+/// The default configuration storage
+///
+/// @access private
+$config-default: () !default;
+
+/// Namespace for settings
+///
+/// @access public
+$config-namespace: "" !default;

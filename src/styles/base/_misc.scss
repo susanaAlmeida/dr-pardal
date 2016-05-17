@@ -1,0 +1,30 @@
+body {
+  color: conf('color.black-type');
+  line-height: 0;
+  margin: 0;
+  padding: conf('height.header') 0 0;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  @include unstyle-list;
+}
+
+.left-container {
+  @include left-container;
+}
+
+.right-container {
+  @include right-container;
+}
+
+section {
+  display: flex;
+}
+
+@include media('<=860px') {
+  body {
+    padding: conf('height.header-mobile') 0 0;
+  }
+}

@@ -1,0 +1,29 @@
+@font-face {
+  $fonts-base-path: conf('paths.fonts');
+
+  font-family: '<%= fontName %>';
+  src: url('#{$fonts-base-path}/<%= fontPath %>/<%= fontName %>.eot');
+  src: url('#{$fonts-base-path}/<%= fontPath %>/<%= fontName %>.eot?#iefix') format('eot'),
+       url('#{$fonts-base-path}/<%= fontPath %>/<%= fontName %>.woff') format('woff'),
+       url('#{$fonts-base-path}/<%= fontPath %>/<%= fontName %>.ttf') format('truetype'),
+       url('#{$fonts-base-path}/<%= fontPath %>/<%= fontName %>.svg#<%= fontName %>') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='<%= className %>-'],
+[class*=' <%= className %>-'] {
+  display: inline-block;
+  font-family: '<%= fontName %>';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+<% _.each(glyphs, function(glyph) { %>.<%= className %>-<%= glyph.name %>:before {
+  content: conf('<%= fontName %>.<%= glyph.name %>');
+}
+
+<% }); %>

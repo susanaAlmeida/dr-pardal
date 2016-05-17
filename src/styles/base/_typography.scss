@@ -1,0 +1,32 @@
+$headings: h1, h2, h3;
+
+#{$headings} {
+  @include conf('font.montserrat.semibold');
+
+  margin: 0;
+}
+
+@each $heading in $headings {
+  @if config-has(#{'type.' + $heading}) {
+    #{$heading} {
+      @include conf(#{'type.' + $heading});
+    }
+  }
+}
+
+p {
+  @include conf('font.montserrat.light');
+  @include conf('type.p');
+}
+
+.link {
+  @include conf('font.montserrat.semibold');
+  @include conf('type.link');
+
+  color: conf('color.gold');
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: conf('color.light-gold');
+  }
+}

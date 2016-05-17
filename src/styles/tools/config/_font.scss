@@ -1,0 +1,25 @@
+@include config-set('font', (
+  montserrat: (
+    hairline: (
+      font-family: ('montserrat-hairline')
+    ),
+    light: (
+      font-family: ('montserrat-light')
+    ),
+    semibold: (
+      font-family: ('montserrat-semi_bold')
+    ),
+    ultralight: (
+      font-family: ('montserrat-ultra_light')
+    )
+  ),
+
+  icons: (
+    font-family: 'icons',
+    display: inline-block,
+    vertical-align: middle,
+    -moz-osx-font-smoothing: grayscale,
+    -webkit-font-smoothing: antialiased
+  ),
+
+), true);

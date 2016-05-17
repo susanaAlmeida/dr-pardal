@@ -1,0 +1,42 @@
+@include config-set('type', (
+  h1: (
+    font-size: 80px,
+    line-height: 90px,
+    letter-spacing: .1em,
+    text-transform: uppercase
+  ),
+
+  h2: (
+    font-size: 26px,
+    line-height: 32px,
+    letter-spacing: .18em,
+    text-transform: uppercase
+  ),
+
+  h3: (
+    font-size: 36px,
+    letter-spacing: .51px,
+    line-height: 36px
+  ),
+
+  link: (
+    display: inline,
+    font-size: 16px,
+    line-height: 18px,
+    text-decoration: none,
+    letter-spacing: .1em
+  ),
+
+  p: (
+    font-size: 16px,
+    line-height: 20px,
+    letter-spacing: .1em,
+    margin: 0
+  ),
+
+  small: (
+    font-size: 12px,
+    line-height: 20px,
+    margin: 0
+  )
+), true);

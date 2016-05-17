@@ -1,0 +1,235 @@
+.schedule {
+  margin-top: 100px;
+
+  .separator {
+    align-items: flex-start;
+    height: 200px;
+
+    h2 {
+      position: relative;
+    }
+
+    h2::after {
+      @include font-size(13, 13);
+
+      color: conf('color.gold');
+      content: 'Agora fechado';
+      display: none;
+      letter-spacing: .075em;
+      margin-top: 5px;
+      text-align: left;
+      text-transform: initial;
+    }
+
+    &.closed {
+      h2::after {
+        display: block;
+      }
+    }
+  }
+
+  .right-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 150px;
+  }
+
+  .timeline {
+    @include size(100% 80px);
+
+    align-items: flex-start;
+    display: flex;
+
+    &.weekend {
+      .line-container {
+        margin-right: 73px;
+      }
+
+      .line {
+        display: inline-block;
+        width: 35%;
+      }
+
+      .disabled {
+        width: 5%;
+      }
+    }
+  }
+
+  .line-container {
+    flex: 1 1 auto;
+    position: relative;
+
+    .hour {
+      margin-right: 0;
+    }
+  }
+
+  label {
+    @include conf('font.montserrat.semibold');
+    @include font-size(16, 16);
+
+    flex: 0 1 auto;
+    padding-right: 25px;
+    text-transform: uppercase;
+  }
+
+  .hour {
+    @include conf('font.montserrat.light');
+    @include font-size(13, 13);
+
+    color: conf('color.gray-font');
+    margin: 0 15px;
+  }
+
+  .line {
+    background-color: conf('color.light-gold');
+    height: 10px;
+    margin: 2px 0 0;
+    position: relative;
+
+    &.disabled {
+      background-color: #d0d1d3; //scss-lint:disable ColorVariable
+      margin-right: -3px;
+    }
+  }
+
+  .line-filler {
+    @include position(absolute, 0 null 0 0);
+
+    background-color: conf('color.gold');
+
+    &::before {
+      @include triangle(14px 10px, conf('color.gold'), down);
+      @include position(absolute, -18px -7px null null);
+
+      content: '';
+      display: none;
+    }
+
+    &::after {
+      @include position(absolute, null 0 -25px null);
+      @include conf('font.montserrat.semibold');
+
+      color: conf('color.gold');
+      content: attr(data-hour);
+      display: none;
+      font-size: 13px;
+      transform: translateX(100%);
+    }
+
+    span {
+      @include position(absolute, null 0 -45px null);
+      @include conf('font.montserrat.light');
+
+      color: conf('color.gold');
+      display: none;
+      font-size: 13px;
+      margin: 0;
+      overflow: visible;
+      transform: translateX(100%);
+      width: 120px;
+    }
+
+    &.active {
+      border-right: 1px solid conf('color.white');
+
+      &::after,
+      &::before {
+        display: block;
+      }
+    }
+
+    &.with-warning span {
+      display: block;
+    }
+  }
+}
+
+@include media('<=820px') {
+  .schedule {
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+    .separator {
+      flex-basis: 100%;
+      height: auto;
+      justify-content: flex-start;
+      margin-bottom: 55px;
+      padding: 0 30px;
+
+      h2::after {
+        @include position(absolute, 11px null null 110px);
+        @include font-size(10);
+
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    .right-container {
+      flex-basis: 100%;
+      padding: 0 30px;
+    }
+  }
+}
+
+@include media('<=tablet') {
+  .schedule {
+    margin-top: 20px;
+
+    .separator {
+      margin-bottom: 15px;
+
+      h2 {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+    }
+
+    label,
+    .hour {
+      @include font-size(10, 10);
+
+      padding: 0;
+    }
+
+    .timeline {
+      height: 60px;
+    }
+
+    .line {
+      height: 5px;
+      margin: 3px 0 0;
+    }
+
+    .line-filler {
+      &::after {
+        @include font-size(10, 10);
+
+        bottom: -20px;
+        transform: translateX(0);
+      }
+
+      span {
+        @include font-size(10, 10);
+
+        bottom: -35px;
+        transform: translateX(0);
+        width: 87px;
+      }
+    }
+  }
+}
+
+@include media('<=phone') {
+  .weekend .line-container {
+    margin-right: 60px;
+    position: relative;
+
+    span {
+      @include position(absolute, 0 0 null null);
+    }
+  }
+}
